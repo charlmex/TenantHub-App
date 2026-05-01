@@ -89,7 +89,7 @@ CVV    : 408
 
 ## Deploying to AWS
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for the full guide:
+See Lecture notes for the full guide:
 - Create IAM user and configure AWS CLI
 - Create DynamoDB tables, SSM parameters, Secrets Manager secret
 - Push image to ECR and deploy to ECS Fargate
