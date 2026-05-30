@@ -115,3 +115,4 @@ See Lecture notes for the full guide:
 | GET | /api/payments/verify/:ref | Verify transaction |
 | POST | /api/payments/webhook | Paystack webhook |
 | GET | /api/payments/tenant/:id | List tenant payments |
+# deploy test trigger
