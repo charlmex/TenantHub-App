@@ -491,24 +491,68 @@ Configured IAM permissions according to service requirements.
 
 TenantHub was successfully deployed as a multi-tenant SaaS application on AWS.
 
-Completed capabilities:
-
-✅ Docker containerization
-✅ GitHub Actions CI/CD pipeline
-✅ GitHub OIDC AWS authentication
-✅ Amazon ECR image management
-✅ ECS Fargate production deployment
-✅ Application Load Balancer routing
-✅ API Gateway REST API
-✅ DynamoDB persistence
-✅ AWS Systems Manager secret injection
-✅ VPC endpoint networking
-✅ CloudWatch monitoring
-✅ Paystack payment verification
-
-Additional AWS technologies explored:
-
-✅ AWS CodeBuild CI/CD architecture
-✅ CloudFront S3 frontend delivery architecture
-
 The project demonstrates a complete AWS DevOps lifecycle from source code commit, automated container delivery, cloud deployment, security configuration, and production validation.
+
+---
+
+## Completed Capabilities
+
+✅ Docker containerization  
+✅ GitHub Actions CI/CD pipeline  
+✅ GitHub OIDC AWS authentication  
+✅ Amazon ECR image management  
+✅ ECS Fargate production deployment  
+✅ Application Load Balancer routing  
+✅ API Gateway REST API integration  
+✅ DynamoDB persistent storage  
+✅ AWS Systems Manager Parameter Store secret injection  
+✅ VPC endpoint networking  
+✅ CloudWatch logging and monitoring  
+✅ Paystack payment verification workflow  
+
+---
+
+## AWS Technologies Explored
+
+The following AWS services were also explored during the project development and deployment process:
+
+✅ AWS CodeBuild CI/CD architecture  
+✅ Amazon CloudFront + S3 frontend delivery architecture  
+
+> Note: Due to AWS account verification restrictions, the final production deployment used GitHub Actions for CI/CD and S3 frontend hosting without CloudFront. CodeBuild and CloudFront configurations are retained in the repository as architecture references and learning artifacts.
+
+---
+
+## Final Architecture Flow
+
+```text
+Developer Push
+      |
+      v
+GitHub Repository
+      |
+      v
+GitHub Actions CI/CD
+      |
+      v
+Amazon ECR
+      |
+      v
+ECS Fargate
+      |
+      v
+Application Load Balancer
+      |
+      v
+API Gateway
+      |
+      v
+TenantHub API
+      |
+      +----------------+
+      |                |
+      v                v
+ DynamoDB        Paystack API
+      |
+      v
+CloudWatch Monitoring
