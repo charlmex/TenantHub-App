@@ -1,0 +1,1 @@
+{"reference":"th_d603a309-969","amount":5000,"currency":"NGN","status":"success","channel":"card","paidAt":"2026-06-17T22:24:59.000Z","customer":"test@example.com"}

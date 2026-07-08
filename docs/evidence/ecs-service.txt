@@ -1,0 +1,591 @@
+{
+    "services": [
+        {
+            "serviceArn": "arn:aws:ecs:eu-central-1:204758923130:service/tenanthub-cluster/tenanthub-api",
+            "serviceName": "tenanthub-api",
+            "clusterArn": "arn:aws:ecs:eu-central-1:204758923130:cluster/tenanthub-cluster",
+            "loadBalancers": [
+                {
+                    "targetGroupArn": "arn:aws:elasticloadbalancing:eu-central-1:204758923130:targetgroup/tenanthub-api-tg-ip/dc1c952393f5ad50",
+                    "containerName": "tenanthub-api",
+                    "containerPort": 3000
+                }
+            ],
+            "serviceRegistries": [],
+            "status": "ACTIVE",
+            "desiredCount": 2,
+            "runningCount": 2,
+            "pendingCount": 0,
+            "launchType": "FARGATE",
+            "platformVersion": "LATEST",
+            "platformFamily": "Linux",
+            "taskDefinition": "arn:aws:ecs:eu-central-1:204758923130:task-definition/tenanthub-api:3",
+            "deploymentConfiguration": {
+                "deploymentCircuitBreaker": {
+                    "enable": false,
+                    "rollback": false
+                },
+                "maximumPercent": 200,
+                "minimumHealthyPercent": 100
+            },
+            "deployments": [
+                {
+                    "id": "ecs-svc/8933506055862965090",
+                    "status": "PRIMARY",
+                    "taskDefinition": "arn:aws:ecs:eu-central-1:204758923130:task-definition/tenanthub-api:3",
+                    "desiredCount": 2,
+                    "pendingCount": 0,
+                    "runningCount": 2,
+                    "failedTasks": 0,
+                    "createdAt": "2026-06-18T00:15:35.633000+02:00",
+                    "updatedAt": "2026-07-08T19:23:30.851000+02:00",
+                    "launchType": "FARGATE",
+                    "platformVersion": "1.4.0",
+                    "platformFamily": "Linux",
+                    "networkConfiguration": {
+                        "awsvpcConfiguration": {
+                            "subnets": [
+                                "subnet-0dac5555247ec8573",
+                                "subnet-07690658707b304e7"
+                            ],
+                            "securityGroups": [
+                                "sg-03e3197b6b5912e7d"
+                            ],
+                            "assignPublicIp": "ENABLED"
+                        }
+                    },
+                    "rolloutState": "COMPLETED",
+                    "rolloutStateReason": "ECS deployment ecs-svc/8933506055862965090 completed."
+                }
+            ],
+            "roleArn": "arn:aws:iam::204758923130:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+            "events": [
+                {
+                    "id": "272c053c-85d7-41b9-b827-5d3a07e71e8a",
+                    "createdAt": "2026-07-08T19:23:30.858000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "11c89e07-c4f5-4159-b92f-0b83e224b19d",
+                    "createdAt": "2026-07-08T19:23:21.626000+02:00",
+                    "message": "(service tenanthub-api) registered 2 targets in (target-group arn:aws:elasticloadbalancing:eu-central-1:204758923130:targetgroup/tenanthub-api-tg-ip/dc1c952393f5ad50)"
+                },
+                {
+                    "id": "51f0a2be-bd0a-431c-84e0-ee07ad7bb62e",
+                    "createdAt": "2026-07-08T19:22:52.683000+02:00",
+                    "message": "(service tenanthub-api) has started 2 tasks: (task adbf9f49441740c2ae6f53b022bd11fe) (task f11055a2581142ceb08de25efcdc5295)."
+                },
+                {
+                    "id": "85abf079-f833-4831-90d7-9c5d407658e6",
+                    "createdAt": "2026-07-08T16:54:08.711000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "3f2742df-53af-4de8-b71c-988739c0c348",
+                    "createdAt": "2026-07-08T10:53:59.829000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "ab9fd6e4-8ac6-40d0-ae9a-810ae457d9ad",
+                    "createdAt": "2026-07-08T04:53:55.954000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "8fcd3d8b-d77b-4b64-8852-f9a2cfb0d276",
+                    "createdAt": "2026-07-07T22:53:54.658000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "fab272ff-9b08-4bfa-872a-b0c75628cbfb",
+                    "createdAt": "2026-07-07T16:53:32.894000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "33d5508b-2f95-4d6d-93ba-0f36616fb05c",
+                    "createdAt": "2026-07-07T10:53:10.681000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "cb8157cb-8ae8-4d6c-9ed0-abede94953dd",
+                    "createdAt": "2026-07-07T04:52:57.017000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "dc73fc84-f198-48ed-9de0-a2e125a79d19",
+                    "createdAt": "2026-07-06T22:52:19.117000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "da2dd3be-8a0b-454f-8d86-edc5f9b89757",
+                    "createdAt": "2026-07-06T16:51:47.908000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "97e2f947-163a-4203-982b-bd79cd0394ae",
+                    "createdAt": "2026-07-06T10:51:12.053000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "df7f15e2-7475-454c-a212-23b5c936c67e",
+                    "createdAt": "2026-07-06T04:50:52.865000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "07d31967-de7f-4885-bcf5-93ceb7bef881",
+                    "createdAt": "2026-07-05T22:50:31.320000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "b8dcabe2-13a9-4735-ad1c-6b247216daf7",
+                    "createdAt": "2026-07-05T16:50:27.822000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "551bef63-8d4d-4df4-963e-812dd0c9f427",
+                    "createdAt": "2026-07-05T10:50:06.848000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "45cfd1a5-4c7c-4eda-a96f-316fe2daf30c",
+                    "createdAt": "2026-07-05T04:49:30.239000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "ff5acaf9-fabc-4bbf-9aef-bacd210eddae",
+                    "createdAt": "2026-07-04T22:49:22.239000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "3e0082e0-7bba-4616-9bbe-ba55adaf115d",
+                    "createdAt": "2026-07-04T16:49:06.401000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "3d8c75b3-cf31-4ffa-8555-6af8ed5c65b6",
+                    "createdAt": "2026-07-04T10:48:37.156000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "398a27ae-562a-4fd8-9b63-f8dec7968f33",
+                    "createdAt": "2026-07-04T04:48:36.719000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "00fe8c12-3bae-4df3-abfa-e7b81225d53e",
+                    "createdAt": "2026-07-03T22:48:06.911000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "f385b1fb-829f-4d26-b2fb-f6ac7955b5cb",
+                    "createdAt": "2026-07-03T16:47:57.019000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "d031d560-558e-4854-8c46-5bd46f38506d",
+                    "createdAt": "2026-07-03T10:47:31.110000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "ae47e693-9296-4652-a071-c1842c87bd60",
+                    "createdAt": "2026-07-03T04:47:19.420000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "4fb8bf2e-f703-4c46-b44d-4628bb40a4be",
+                    "createdAt": "2026-07-02T22:46:52.571000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "6d7c47f2-3a70-45e9-a4f1-23e8deb8a500",
+                    "createdAt": "2026-07-02T16:46:09.389000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "bbf40df1-ed8c-49a3-ad7b-3420ebbad88d",
+                    "createdAt": "2026-07-02T10:45:31.816000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "08f996c6-9080-4c85-8aff-15c3bea153a8",
+                    "createdAt": "2026-07-02T04:45:10.439000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "3993dca2-cf8b-4733-90ba-468f44309d81",
+                    "createdAt": "2026-07-01T22:44:51.578000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "7269bc33-285b-4261-bcc3-43a5b76681f9",
+                    "createdAt": "2026-07-01T16:44:42.985000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "8ce7175a-5753-4803-b27f-30d2d7808a03",
+                    "createdAt": "2026-07-01T10:44:35.222000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "f922942b-df5d-4cd6-a3b3-ff215e1412a7",
+                    "createdAt": "2026-07-01T04:43:56.799000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "6af7b5d2-6ee8-4a1d-9d48-bdb15eabf150",
+                    "createdAt": "2026-06-30T22:43:54.727000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "3ae405fd-8266-40c4-abf1-1abb81c7a16d",
+                    "createdAt": "2026-06-30T16:43:09.511000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "6725144d-0dba-42c2-947c-ebadd8b2ba43",
+                    "createdAt": "2026-06-30T10:42:40.065000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "1441a41d-5032-4dcc-b68e-effc8eb447a4",
+                    "createdAt": "2026-06-30T04:41:55.845000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "c128e63c-a994-4113-b919-d8170107d3ef",
+                    "createdAt": "2026-06-29T22:41:53.694000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "c28a3528-4799-486c-b478-994a81e958b9",
+                    "createdAt": "2026-06-29T16:41:25.517000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "47d2201f-10e0-4558-a2f2-8346c1973d6b",
+                    "createdAt": "2026-06-29T10:41:07.891000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "8553ec07-77d3-4787-ae5e-8ced7b96b796",
+                    "createdAt": "2026-06-29T04:40:56.014000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "decf3b73-49c7-4fc8-a290-13b9f31b7a3b",
+                    "createdAt": "2026-06-28T22:40:30.891000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "73a7065a-e687-4811-b334-5b8e9baa3320",
+                    "createdAt": "2026-06-28T16:40:28.591000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "f2957753-ef59-40b4-a952-95814e198be4",
+                    "createdAt": "2026-06-28T10:39:46.407000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "7fbfbb16-061d-405a-9445-06d6f9cee0f4",
+                    "createdAt": "2026-06-28T04:39:08.120000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "fa26506e-77c5-427e-a698-c20a92ba819d",
+                    "createdAt": "2026-06-27T22:39:02.493000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "72037322-a4ee-4bd2-8e63-b5713aa2b777",
+                    "createdAt": "2026-06-27T22:39:02.480000+02:00",
+                    "message": "(service tenanthub-api, taskSet ecs-svc/8933506055862965090) has begun draining connections on 2 tasks."
+                },
+                {
+                    "id": "93d8fcdb-2aa1-46e2-90b6-7fdb295679d2",
+                    "createdAt": "2026-06-27T22:39:02.477000+02:00",
+                    "message": "(service tenanthub-api) deregistered 2 targets in (target-group arn:aws:elasticloadbalancing:eu-central-1:204758923130:targetgroup/tenanthub-api-tg-ip/dc1c952393f5ad50)"
+                },
+                {
+                    "id": "b39b2f44-db58-489a-b5b5-7c97b911ad72",
+                    "createdAt": "2026-06-27T22:38:53.428000+02:00",
+                    "message": "(service tenanthub-api) has stopped 2 running tasks: (task 5cfa5c30581b4ca28c1924bd7d094d0b) (task bc38775940d043ecb0b1f841dc815185)."
+                },
+                {
+                    "id": "a3a595bb-0223-4698-8b96-708cb380d62c",
+                    "createdAt": "2026-06-27T20:25:13.029000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "bf22c8ca-8cbb-4e06-a9c9-51bfe8ffa3da",
+                    "createdAt": "2026-06-27T20:25:03.637000+02:00",
+                    "message": "(service tenanthub-api) registered 2 targets in (target-group arn:aws:elasticloadbalancing:eu-central-1:204758923130:targetgroup/tenanthub-api-tg-ip/dc1c952393f5ad50)"
+                },
+                {
+                    "id": "02ef1473-29aa-49fd-bc66-adfbe2211a1c",
+                    "createdAt": "2026-06-27T20:24:35.675000+02:00",
+                    "message": "(service tenanthub-api) has started 2 tasks: (task 5cfa5c30581b4ca28c1924bd7d094d0b) (task bc38775940d043ecb0b1f841dc815185)."
+                },
+                {
+                    "id": "245bbef3-de58-4c47-8777-47b664f6fbd3",
+                    "createdAt": "2026-06-27T16:38:36.458000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "b2288441-00bd-45d2-91c6-2bf16cde61fb",
+                    "createdAt": "2026-06-27T10:38:21.250000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "51972e73-66aa-4fe1-8901-00e35cc9653a",
+                    "createdAt": "2026-06-27T04:37:46.536000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "3c033348-2a3e-4d46-8a9e-5a1a15792222",
+                    "createdAt": "2026-06-26T22:37:23.533000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "440e6daf-8a72-4e39-b2b2-160fa63ac7e9",
+                    "createdAt": "2026-06-26T16:37:06.475000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "ff255d44-59aa-4e19-aca9-356a70fd7708",
+                    "createdAt": "2026-06-26T10:36:57.132000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "f15315a4-7122-4bb6-932c-9636837d5b3b",
+                    "createdAt": "2026-06-26T04:36:33.575000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "5709ce45-5ea1-4c24-b64c-c1b319bea4ca",
+                    "createdAt": "2026-06-25T22:36:30.061000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "92d40751-5866-4c7b-8f49-bdf9128beda4",
+                    "createdAt": "2026-06-25T16:36:18.731000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "b18a2b49-a69d-45a3-977f-f4119bad066e",
+                    "createdAt": "2026-06-25T10:36:11.921000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "726e01f5-66e4-4dfb-8378-d827afbf1090",
+                    "createdAt": "2026-06-25T04:35:35.257000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "3c6ef3fe-f2b5-4669-bd1c-cdb0c6c1ad5f",
+                    "createdAt": "2026-06-24T22:35:02.282000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "36c9479b-4da7-4832-9194-4fa9e2956925",
+                    "createdAt": "2026-06-24T16:34:38.079000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "83070f99-9b25-4d7c-b4a7-3051391e4c8f",
+                    "createdAt": "2026-06-24T10:34:13.452000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "d53423a4-f9d7-41e9-8531-24ebb497afcf",
+                    "createdAt": "2026-06-24T04:33:39.242000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "310ba02c-d344-4965-9ab2-5df3abce223e",
+                    "createdAt": "2026-06-23T22:33:16.122000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "f5a21976-cbf4-41bf-af51-02847cbfd54a",
+                    "createdAt": "2026-06-23T16:33:00.159000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "1c00e040-8b75-469f-8222-01e66be7be81",
+                    "createdAt": "2026-06-23T10:32:53.962000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "5ba6858d-f213-424e-a31c-297829cc929c",
+                    "createdAt": "2026-06-23T04:32:15.718000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "10024aa9-f304-44ef-b300-df30ae261a49",
+                    "createdAt": "2026-06-22T22:31:46.549000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "3a0225be-2583-4f36-9d3c-21933a958882",
+                    "createdAt": "2026-06-22T16:31:30.185000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "73c0bc39-8596-4e25-9c2b-c0fffaf4b7aa",
+                    "createdAt": "2026-06-22T10:31:04.753000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "bdead4d1-05d1-4f2f-983c-774c361b976d",
+                    "createdAt": "2026-06-22T04:30:41.580000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "4bd59af1-7828-4a57-b7d8-b64fd130057e",
+                    "createdAt": "2026-06-21T22:30:25.220000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "ced32c61-3500-453f-a028-9e17a9cc5581",
+                    "createdAt": "2026-06-21T22:30:25.207000+02:00",
+                    "message": "(service tenanthub-api, taskSet ecs-svc/8933506055862965090) has begun draining connections on 2 tasks."
+                },
+                {
+                    "id": "9bb4013b-8b09-4199-b14e-449dbddfaa86",
+                    "createdAt": "2026-06-21T22:30:25.204000+02:00",
+                    "message": "(service tenanthub-api) deregistered 2 targets in (target-group arn:aws:elasticloadbalancing:eu-central-1:204758923130:targetgroup/tenanthub-api-tg-ip/dc1c952393f5ad50)"
+                },
+                {
+                    "id": "84ae654f-b8fe-49ec-9644-531f960f708c",
+                    "createdAt": "2026-06-21T22:30:16.160000+02:00",
+                    "message": "(service tenanthub-api) has stopped 2 running tasks: (task 4cb15ca9c49c44c5bfd6dbb4f7de5242) (task 7b0ee620d1e148fbaea55725edb0334e)."
+                },
+                {
+                    "id": "5c1e508e-ea5b-4f30-ad90-b5dbad352f37",
+                    "createdAt": "2026-06-21T20:57:58.044000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "e13a04f2-fa98-4fe9-9b0b-da94eac1c3c1",
+                    "createdAt": "2026-06-21T20:57:49.134000+02:00",
+                    "message": "(service tenanthub-api) registered 2 targets in (target-group arn:aws:elasticloadbalancing:eu-central-1:204758923130:targetgroup/tenanthub-api-tg-ip/dc1c952393f5ad50)"
+                },
+                {
+                    "id": "9c10f76b-e1a7-49b7-9419-9a7ec82c0f13",
+                    "createdAt": "2026-06-21T20:57:19.773000+02:00",
+                    "message": "(service tenanthub-api) has started 2 tasks: (task 4cb15ca9c49c44c5bfd6dbb4f7de5242) (task 7b0ee620d1e148fbaea55725edb0334e)."
+                },
+                {
+                    "id": "a6a816c3-36cc-4551-aad6-86bc8b6c7c4b",
+                    "createdAt": "2026-06-21T18:54:57.909000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "7ff0a915-00fe-4151-81f7-54262e6f0139",
+                    "createdAt": "2026-06-21T12:54:44.096000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "4ae65a56-41ce-4c3d-b253-e0cc572a3734",
+                    "createdAt": "2026-06-21T06:54:35.788000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "4d8bd2f0-e160-4374-8a98-21ef65cff5e4",
+                    "createdAt": "2026-06-21T00:54:23.579000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "35eb7431-5c40-4f4a-8bc3-087a75e0ab63",
+                    "createdAt": "2026-06-20T18:53:41.465000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "9ac64e7d-e46e-4088-8b83-99dec060f49f",
+                    "createdAt": "2026-06-20T12:53:10.174000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "1e94b891-acf1-419d-a12a-5c028d1ebcb0",
+                    "createdAt": "2026-06-20T06:52:43.784000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "bffa5152-dbd2-4b02-923d-bd02d16b7636",
+                    "createdAt": "2026-06-20T00:52:35.061000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "f97866bd-e437-4b3a-9392-2aae05256a94",
+                    "createdAt": "2026-06-19T18:52:13.963000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "1c81a3b3-2ef2-4816-b018-5ab584cc753c",
+                    "createdAt": "2026-06-19T12:51:55.167000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "7e0d89e7-24af-4e9a-b478-ddca666d8a84",
+                    "createdAt": "2026-06-19T06:51:42.319000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "11b0dd9f-3d56-4f01-8631-14dea4bdc34d",
+                    "createdAt": "2026-06-19T00:51:03.407000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "7a2ef53e-2382-4c21-aa16-4fbde602d242",
+                    "createdAt": "2026-06-18T18:50:24.068000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "f0d2610a-3ad1-44be-b547-f38f94279d2d",
+                    "createdAt": "2026-06-18T12:50:08.265000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "ae30643f-f3ad-47c1-b05c-51ed4c66c4ae",
+                    "createdAt": "2026-06-18T06:49:34.134000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "179a5202-e809-4804-a238-232a2802ff9a",
+                    "createdAt": "2026-06-18T00:49:15.164000+02:00",
+                    "message": "(service tenanthub-api) has reached a steady state."
+                },
+                {
+                    "id": "d8522aff-e997-4db8-b3c3-4770748acf5e",
+                    "createdAt": "2026-06-18T00:49:15.148000+02:00",
+                    "message": "(service tenanthub-api, taskSet ecs-svc/8933506055862965090) has begun draining connections on 2 tasks."
+                }
+            ],
+            "createdAt": "2026-05-23T18:59:13.322000+02:00",
+            "placementConstraints": [],
+            "placementStrategy": [],
+            "networkConfiguration": {
+                "awsvpcConfiguration": {
+                    "subnets": [
+                        "subnet-0dac5555247ec8573",
+                        "subnet-07690658707b304e7"
+                    ],
+                    "securityGroups": [
+                        "sg-03e3197b6b5912e7d"
+                    ],
+                    "assignPublicIp": "ENABLED"
+                }
+            },
+            "healthCheckGracePeriodSeconds": 0,
+            "schedulingStrategy": "REPLICA",
+            "deploymentController": {
+                "type": "ECS"
+            },
+            "createdBy": "arn:aws:iam::204758923130:user/carepadi-devops",
+            "enableECSManagedTags": false,
+            "propagateTags": "NONE",
+            "enableExecuteCommand": false
+        }
+    ],
+    "failures": []
+}

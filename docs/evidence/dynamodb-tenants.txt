@@ -1,0 +1,44 @@
+{
+    "Items": [
+        {
+            "plan": {
+                "S": "pro"
+            },
+            "upgradedAt": {
+                "S": "2026-07-08T19:22:13.827Z"
+            },
+            "createdAt": {
+                "S": "2026-06-17T20:43:01.695Z"
+            },
+            "email": {
+                "S": "apigw@test.com"
+            },
+            "name": {
+                "S": "API GW Tenant"
+            },
+            "tenantId": {
+                "S": "1baef1f7-559e-45d4-8956-af67d7e75577"
+            }
+        },
+        {
+            "plan": {
+                "S": "free"
+            },
+            "createdAt": {
+                "S": "2026-05-23T21:10:16.524Z"
+            },
+            "email": {
+                "S": "test@example.com"
+            },
+            "name": {
+                "S": "Test Tenant"
+            },
+            "tenantId": {
+                "S": "f29abbc0-8a58-4ba9-b2ee-88bc41840ed7"
+            }
+        }
+    ],
+    "Count": 2,
+    "ScannedCount": 2,
+    "ConsumedCapacity": null
+}

@@ -1,0 +1,1 @@
+[{"plan":"pro","upgradedAt":"2026-07-08T19:02:35.419Z","createdAt":"2026-06-17T20:43:01.695Z","email":"apigw@test.com","name":"API GW Tenant","tenantId":"1baef1f7-559e-45d4-8956-af67d7e75577"},{"plan":"free","createdAt":"2026-05-23T21:10:16.524Z","email":"test@example.com","name":"Test Tenant","tenantId":"f29abbc0-8a58-4ba9-b2ee-88bc41840ed7"}]

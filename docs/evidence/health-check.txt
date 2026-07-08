@@ -1,0 +1,1 @@
+{"status":"healthy","service":"tenanthub-api","timestamp":"2026-07-08T19:22:12.997Z"}
