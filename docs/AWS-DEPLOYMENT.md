@@ -2,7 +2,7 @@
 
 ## Architecture
 
-![TenantHub AWS Architecture](screenshots/aws-architecture.png)
+![TenantHub AWS Architecture](screenshots/TenantHub-Multi-Tenant_SaaS_on_AWS.png)
 
 TenantHub is deployed using a production-style AWS architecture with automated container delivery.
 
