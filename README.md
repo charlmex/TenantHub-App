@@ -4,10 +4,30 @@ Multi-tenant project management SaaS with Paystack payment integration.
 Built for the AWS DevOps Bootcamp by Spice Technologies.
 
 ```
-tenanthub/
+TenantHub-App/
+│
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
 ├── api/          # Node.js backend  →  ECS Fargate (production)
 ├── frontend/     # Static HTML/JS   →  S3 + CloudFront (production)
-└── docker-compose.yml
+│
+├── docs/
+│   ├── deployment-guide/
+│   ├── evidence/
+│   ├── screenshots/
+│   └── AWS_DEPLOYMENT.md
+│
+├── infrastructure/
+│   ├── iam/
+│   ├── codebuild/
+│   └── README.md
+│
+├── docker-compose.yml
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
 ---
