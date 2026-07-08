@@ -109,10 +109,26 @@ CVV    : 408
 
 ## Deploying to AWS
 
-See Lecture notes for the full guide:
-- Create IAM user and configure AWS CLI
-- Create DynamoDB tables, SSM parameters, Secrets Manager secret
-- Push image to ECR and deploy to ECS Fargate
+A complete AWS deployment guide is available in the `docs` folder.
+
+See:
+
+- [AWS Deployment Guide](docs/AWS-DEPLOYMENT.md)
+- [Deployment Steps and AWS CLI Commands](docs/deployment-guide/)
+
+The deployment process covers:
+
+- AWS CLI configuration and authentication
+- IAM roles and permissions
+- DynamoDB table creation
+- SSM Parameter Store secret management
+- Docker image build and push to Amazon ECR
+- ECS Fargate deployment
+- Application Load Balancer configuration
+- API Gateway proxy integration
+- CloudWatch monitoring
+- Production validation tests
+
 
 ---
 
